@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:id="@+id/cards"
+    android:background="#ffffff">
+     
+	<ImageView
+	    android:id="@+id/Picture"
+	    android:layout_width="450px"
+	    android:layout_height="450px"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"/>
+	
+    <LinearLayout
+        android:id="@+id/row" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:background="#808080"
+    	android:layout_alignParentLeft="true"
+	    android:layout_alignBottom="@+id/Picture"
+	    android:layout_alignRight="@+id/Picture"
+	    android:gravity = "center">
+    	
+    <ImageView
+	    android:id="@+id/contact"
+	    android:layout_width="40px"
+	    android:layout_height="40px"
+	    android:src="@drawable/ic_action_user" />
+    
+    <TextView
+        android:id="@+id/Name"
+        android:layout_height="wrap_content"
+        android:layout_width = "fill_parent"
+        android:textColor="#C0C0C0"
+        style="@style/autoscroll"/>
+    
+    
+  </LinearLayout>
+  
+	 <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Picture"
+        android:layout_alignParentTop="true"
+        android:textColor="#C0C0C0"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:textSize="19sp" 
+        android:maxHeight="450px" 
+        style="@style/autoscroll"/>
+	 
+	 <LinearLayout
+        android:id="@+id/row1" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_toRightOf="@+id/Picture"
+	    android:layout_below="@+id/Title"
+	    android:gravity = "center">
+    
+	 <ImageView
+	    android:id="@+id/social"
+	    android:layout_width="40px"
+	    android:layout_height="40px"
+	    android:layout_toRightOf="@+id/Picture"
+	    android:src="@drawable/socialgroup" />
+	
+	<TextView
+        android:id="@+id/Job"
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:textColor="#C0C0C0"
+        style="@style/autoscroll"/>
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/row2" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_toRightOf="@+id/Picture"
+	    android:layout_below="@+id/row1"
+	    android:gravity = "center">
+	
+	<ImageView
+	    android:id="@+id/place_logo"
+	    android:layout_width="40px"
+	    android:layout_height="40px"
+	    android:layout_toRightOf="@+id/Picture"
+	    android:layout_below="@+id/row1"
+	    android:src="@drawable/location_place" />
+	
+	<TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C0C0C0"
+        style="@style/autoscroll"/>
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/row3" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+	    android:layout_alignBottom="@+id/Picture"
+	    android:layout_toRightOf="@+id/row"
+	    android:gravity = "center">
+	
+	<ImageView
+	    android:id="@+id/clock"
+	    android:layout_width="30px"
+	    android:layout_height="30px"
+	    android:src="@drawable/time" />
+	
+	 <TextView
+        android:id="@+id/Place"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#C0C0C0"
+        android:textSize="10sp" 
+        style="@style/autoscroll" />
+	 </LinearLayout>
+
+    
+    <ImageView
+	    android:id="@+id/slide"
+	    android:layout_width="10px"
+	    android:layout_height="450px"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/slidebutton" />
+    </RelativeLayout>
